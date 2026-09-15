@@ -5,6 +5,17 @@ html {
 div {
     border: 1px solid #010000;
 }
+#main-container-landing {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+  grid-template-areas:
+        "wel wel"
+        "left right"
+        "nav nav";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+}
 
 #main-container {
     height: 100vh;
@@ -17,6 +28,26 @@ div {
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr 1fr;
 }
+
+#welcome-heading {
+    grid-area: wel;
+    border: 1px solid #010000;
+    background-color: #6774ff;
+    height: fit-content;
+}
+
+#welcome-heading h1 {
+    text-align: center;
+    font-size: 3rem;
+    align-self: center;
+}
+
+#welcome-heading p {
+    text-align: center;
+    align-self: center;
+}
+
+
 
 #entry-1-date {
     grid-area: date;
