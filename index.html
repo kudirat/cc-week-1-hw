@@ -4,6 +4,7 @@
             <meta charset="UTF-8">
             <title>My Journal Entries</title>
             <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
         </head>
         <body>
             <div id="main-container-landing">
@@ -12,45 +13,65 @@
                     <hr>
                     <p>Here you can find my daily journal entries.</p>
                 </div>
-                <div id="left-side">
-                <div id="entry-1-entry">
-                    <h2 id="entry-1-title">Entry: Saturday</h2>
-                    <ul>
-                        <li>What I did in the morning: Woke up dreadfully early to attend my Quran Class.</li>
-                        <li>What I did during the day: I worked on some project work. Designing sites are difficult. And I have a deadline in one week.</li>
-                        <li>What I did in the evening: My friends gave me an ultimatum so I played a game until 2AM and fell asleep.</li>
-                    </ul>
-                    <div id="entry-1-food">
-                        <h3>Foods!</h3>
-                        <p>Breakfast: Turkey Bacon, Eggs, with Cholula Hot Sauce. Maybe a water on the side.</p>
-                    </div>
-                    <div id="entry-1-commute">
-                        <h3>Commute!</h3>
-                        <p>Commute: Went up and down the stairs of the house at least on three different occasions.</p>
-                    </div>
-                    <div id="entry-1-activities">
-                        <h3>Activities!</h3>
-                        <p>I did some site design work in figma. Some video editing as well. And I wrapped up the night with some gaming.</p>
-                    </div>
-                    <!-- <div id="entry-1-music">
-                    <h3>Music!</h3>
-                    <p>Listening to:</p>
-                </div> -->
+                    <div id="entry-calendar">
+                        <table id="table-calendar">
+                            <caption id="cal-title">Journal Entries</caption>
+                            <tr id="day-headers">
+                                <th className="day-header">Sunday</th>
+                                <th className="day-header">Monday</th>
+                                <th className="day-header">Tuesday</th>
+                                <th className="day-header">Wednesday</th>
+                                <th className="day-header">Thursday</th>
+                                <th className="day-header">Friday</th>
+                                <th className="day-header">Saturday</th>
+                        </tr>
+                        <tr id="day-numbers-1">
+                            <th>30</th>
+                            <th>31</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                            <th><a href="entry-1.html">5</a></th>
+                        </tr>
+                        <tr id="day-numbers-2">
+                            <th><a href="entry-2.html">6</a></th>
+                            <th><a href="entry-3.html">7</a></th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                        </tr>
+                        <tr id="day-numbers-3">
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <th>18</th>
+                            <th>19</th>
+                        </tr>
+                        <tr id="day-numbers-4">
+                            <th>20</th>
+                            <th>21</th>
+                            <th>22</th>
+                            <th>23</th>
+                            <th>24</th>
+                            <th>25</th>
+                            <th>26</th>
+                        </tr>
+                        <tr id="day-numbers-5">
+                            <th>27</th>
+                            <th>28</th>
+                            <th>29</th>
+                            <th>30</th>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                        </tr>
+                    </table>
                 </div>
-                </div>
-                <div id="right-side">
-                <div id="entry-1-photos">
-                    <img id="entry-1-photo-1" src="imgs/Tornado.jpg" alt="Photo 1">
-                    <img id="entry-1-photo-2" src="imgs/image0 (1).jpeg" alt="Photo 2">
-                    <img id="entry-1-photo-3" src="imgs/image3 (1).jpeg" alt="Photo 3">
-                    <img id="entry-1-photo-4" src="imgs/image4.jpeg" alt="Photo 4">
-                </div>
-                <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/3komZVtIvHntH7uRDsbawP?utm_source=generator&si=0ac34d85d2834ccd" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>            </div>
-            <div id="entry-1-nav-btns">
-                    <div id="entry-1-prev-btn">prev</div>
-                    <div id="entry-1-next-btn"><a href="entry-2.html">next</a></div>
-               </div> 
-            </div>
-             <script src="myscript.js"></script>
+                <script src="myscript.js"></script>
         </body>
     </html>

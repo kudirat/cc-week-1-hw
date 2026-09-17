@@ -5,25 +5,14 @@ html {
 div {
     border: 1px solid #010000;
 }
+
 #main-container-landing {
     height: 100vh;
     width: 100vw;
     display: grid;
   grid-template-areas:
         "wel wel"
-        "left right"
-        "nav nav";
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr 1fr;
-}
-
-#main-container {
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-  grid-template-areas:
-        "date date"
-        "left right"
+        "cal cal"
         "nav nav";
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr 1fr;
@@ -31,7 +20,6 @@ div {
 
 #welcome-heading {
     grid-area: wel;
-    border: 1px solid #010000;
     background-color: #6774ff;
     height: fit-content;
 }
@@ -47,6 +35,72 @@ div {
     align-self: center;
 }
 
+#entry-calendar {
+    grid-area: cal;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+#cal-title {
+    text-align: center;
+    font-family: 'Sofia', sans-serif;
+    font-size: 2rem;
+    align-self: center;
+}
+
+#table-calendar{
+    border: 1px solid #010000;
+    border-collapse: collapse;
+    width: 50%;
+    height: 50%;
+}
+
+tr {
+    border: 1px solid #010000;
+    color: #010000;
+}
+
+th {
+    padding: 10px;
+}
+
+#day-headers {
+    background-color: #6774ff;
+    color: #f0f0f0;
+}
+
+#day-numbers-1 {
+    color: #808080;
+}
+
+#day-numbers-2 {
+    color: #808080;
+}
+
+#day-numbers-3 {
+    color: #808080;
+}
+
+#day-numbers-4 {
+    color: #808080;
+}
+
+#day-numbers-5 {
+    color: #808080;
+}
+
+#main-container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+  grid-template-areas:
+        "date date"
+        "left right"
+        "nav nav";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+}
 
 
 #entry-1-date {
