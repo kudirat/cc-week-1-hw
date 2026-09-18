@@ -13,7 +13,8 @@ div {
   grid-template-areas:
         "wel wel"
         "cal cal"
-        "nav nav";
+        "nav nav"
+        "ft ft";
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr 1fr;
 }
@@ -90,6 +91,12 @@ th {
     color: #808080;
 }
 
+#footer {
+    grid-area: ft;
+    height: 50%;
+    background-color: #6774ff;
+}
+
 #main-container {
     height: 100vh;
     width: 100vw;
@@ -97,7 +104,7 @@ th {
   grid-template-areas:
         "date date"
         "left right"
-        "nav nav";
+        "btmnav btmnav";
     grid-template-rows: auto 1fr auto;
     grid-template-columns: 1fr 1fr;
 }
@@ -108,6 +115,11 @@ th {
     border: 1px solid #010000;
     background-color: #6774ff;
     height: fit-content;
+    font-family: 'Sofia', sans-serif;
+}
+
+#entry-1-date h1 {
+    font-family: 'Sofia', sans-serif;
 }
 
 #entry-1-title {
@@ -165,10 +177,30 @@ th {
 }
 
 #entry-1-nav-btns {
-    grid-area: nav;
+    grid-area: btmnav;
     display: flex;
     justify-content: center;
     gap: 20px;
-    border: 1px solid #470000;
     padding: 10px;
+    background-color: #6774ff;
+}
+
+#entry-1-prev-btn {
+    width: 50px;
+    height: 20px;
+    background-color: #f1f1f5;
+    color: #f0f0f0;
+    border: 1px solid #010000;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#entry-1-next-btn {
+    width: 50px;
+    height: 20px;
+    background-color: #f1f1f5;
+    color: #f0f0f0;
+    border: 1px solid #010000;
+    border-radius: 5px;
+    text-align: center;
 }
